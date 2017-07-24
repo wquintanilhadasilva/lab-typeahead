@@ -1,10 +1,10 @@
-import { LabTypeaheadPage } from './app.po';
+import { LabPage } from './app.po';
 
-describe('lab-typeahead App', () => {
-  let page: LabTypeaheadPage;
+describe('lab App', () => {
+  let page: LabPage;
 
   beforeEach(() => {
-    page = new LabTypeaheadPage();
+    page = new LabPage();
   });
 
   it('should display welcome message', () => {

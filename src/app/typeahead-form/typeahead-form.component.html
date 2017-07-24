@@ -1,0 +1,11 @@
+<ng-template #wt let-w="result" let-t="term">
+  <img [src]="'https://upload.wikimedia.org/wikipedia/commons/thumb/' + w['flag']" width="16"> {{w.name}}
+</ng-template>
+
+<label for="typeahead-template">Pesquisar pelo estado:</label>
+<input id="typeahead-template" type="text" class="form-control" [(ngModel)]="dominio" [ngbTypeahead]="pesquisar" [resultTemplate]="wt"
+  [inputFormatter]="formatador" />
+<hr>
+<pre>
+  Modelo: {{ dominio | json }}
+</pre>
